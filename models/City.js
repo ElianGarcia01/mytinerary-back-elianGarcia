@@ -19,7 +19,11 @@ let schema = Schema({
     },
   ],
   main_language: { type: String, required: true },
-})
+},
+{
+    timestamps: true
+}
+)
 
 let City = model(collection, schema)
 
