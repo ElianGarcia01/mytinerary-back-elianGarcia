@@ -1,9 +1,11 @@
 import { Router } from "express"
 
-import citiesReadController from "../controllers/cities/read.js"
+import {allCities, cityById} from "../controllers/cities/read.js"
 
 let routerCities = Router()
 
-routerCities.get("/allCities", citiesReadController)
+// Enrutadores
+routerCities.get("/allCities", allCities)
+routerCities.get("/id/:nameId", cityById)
 
 export default routerCities
