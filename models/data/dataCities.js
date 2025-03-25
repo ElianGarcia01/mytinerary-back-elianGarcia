@@ -5,7 +5,7 @@ import City from "../City.js";
 const cities = [
   {
     name_city: "Madrid",
-    image: "madrid.jpg",
+    image: "https://images.unsplash.com/photo-1570698473651-b2de99bae12f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFkcmlkfGVufDB8fDB8fHww",
     country: "Spain",
     continent: "Europe",
     description:
@@ -31,7 +31,7 @@ const cities = [
   },
   {
     name_city: "Paris",
-    image: "paris.jpg",
+    image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UGFyaXN8ZW58MHx8MHx8fDA%3D",
     country: "France",
     continent: "Europe",
     description:
@@ -55,7 +55,7 @@ const cities = [
   },
   {
     name_city: "New York",
-    image: "new_york.jpg",
+    image: "https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TmV3JTIwWW9ya3xlbnwwfHwwfHx8MA%3D%3D",
     country: "USA",
     continent: "North America",
     description:
@@ -81,7 +81,7 @@ const cities = [
   },
   {
     name_city: "Tokyo",
-    image: "tokyo.jpg",
+    image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VG9reW98ZW58MHx8MHx8fDA%3D",
     country: "Japan",
     continent: "Asia",
     description:
@@ -107,7 +107,7 @@ const cities = [
   },
   {
     name_city: "Sydney",
-    image: "sydney.jpg",
+    image: "https://images.unsplash.com/photo-1590716209211-ea74d5f63573?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFN5ZG5leXxlbnwwfHwwfHx8MA%3D%3D",
     country: "Australia",
     continent: "Oceania",
     description:
@@ -133,7 +133,7 @@ const cities = [
   },
   {
     name_city: "Cairo",
-    image: "cairo.jpg",
+    image: "https://images.unsplash.com/photo-1595979904086-471704dc0e81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2Fpcm98ZW58MHx8MHx8fDA%3D",
     country: "Egypt",
     continent: "Africa",
     description:
@@ -159,7 +159,7 @@ const cities = [
   },
   {
     name_city: "Rio de Janeiro",
-    image: "rio.jpg",
+    image: "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     country: "Brazil",
     continent: "South America",
     description:
@@ -185,7 +185,7 @@ const cities = [
   },
   {
     name_city: "Toronto",
-    image: "toronto.jpg",
+    image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VG9yb250b3xlbnwwfHwwfHx8MA%3D%3D",
     country: "Canada",
     continent: "North America",
     description:
@@ -210,7 +210,7 @@ const cities = [
   },
   {
     name_city: "Berlin",
-    image: "berlin.jpg",
+    image: "https://images.unsplash.com/photo-1566404791232-af9fe0ae8f8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QmVybGlufGVufDB8fDB8fHww",
     country: "Germany",
     continent: "Europe",
     description:
@@ -236,7 +236,7 @@ const cities = [
   },
   {
     name_city: "Moscow",
-    image: "moscow.jpg",
+    image: "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TW9zY293fGVufDB8fDB8fHww",
     country: "Russia",
     continent: "Europe",
     description:
@@ -261,7 +261,7 @@ const cities = [
   },
   {
     name_city: "Dubai",
-    image: "dubai.jpg",
+    image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RHViYWl8ZW58MHx8MHx8fDA%3D",
     country: "UAE",
     continent: "Asia",
     description:
@@ -287,7 +287,7 @@ const cities = [
   },
   {
     name_city: "Buenos Aires",
-    image: "buenos_aires.jpg",
+    image: "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QnVlbm9zJTIwQWlyZXN8ZW58MHx8MHx8fDA%3D",
     country: "Argentina",
     continent: "South America",
     description:
@@ -313,7 +313,7 @@ const cities = [
   },
   {
     name_city: "Rome",
-    image: "rome.jpg",
+    image: "https://images.unsplash.com/photo-1555992828-ca4dbe41d294?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Um9tZXxlbnwwfHwwfHx8MA%3D%3D",
     country: "Italy",
     continent: "Europe",
     description:
@@ -339,7 +339,7 @@ const cities = [
   },
   {
     name_city: "Beijing",
-    image: "beijing.jpg",
+    image: "https://images.unsplash.com/photo-1603258740730-18cd1b2fd7a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fEJlaWppbmd8ZW58MHx8MHx8fDA%3D",
     country: "China",
     continent: "Asia",
     description:
@@ -365,7 +365,7 @@ const cities = [
   },
   {
     name_city: "Cape Town",
-    image: "cape_town.jpg",
+    image: "https://images.unsplash.com/photo-1576485375217-d6a95e34d043?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q2FwZSUyMFRvd258ZW58MHx8MHx8fDA%3D",
     country: "South Africa",
     continent: "Africa",
     description:
@@ -391,7 +391,7 @@ const cities = [
   },
   {
     name_city: "Bangkok",
-    image: "bangkok.jpg",
+    image: "https://images.unsplash.com/photo-1583491470869-ca0b9fa90216?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbmdrb2t8ZW58MHx8MHx8fDA%3D",
     country: "Thailand",
     continent: "Asia",
     description:
@@ -417,7 +417,7 @@ const cities = [
   },
   {
     name_city: "Mexico City",
-    image: "mexico_city.jpg",
+    image: "https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEFuZ2VsJTIwZGUlMjBsYSUyMGluZGVwZW5kZW5jaWElMjBNZXhpY298ZW58MHx8MHx8fDA%3D",
     country: "Mexico",
     continent: "North America",
     description:
@@ -442,7 +442,7 @@ const cities = [
   },
   {
     name_city: "Istanbul",
-    image: "istanbul.jpg",
+    image: "https://images.unsplash.com/photo-1564407727371-3eece6c58961?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fEluc3RhbmJ1bHxlbnwwfHwwfHx8MA%3D%3D",
     country: "Turkey",
     continent: "Asia",
     description:
@@ -467,7 +467,7 @@ const cities = [
   },
   {
     name_city: "Amsterdam",
-    image: "amsterdam.jpg",
+    image: "https://images.unsplash.com/photo-1580996378027-23040f16f157?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW1zdGVyZGFufGVufDB8fDB8fHww",
     country: "Netherlands",
     continent: "Europe",
     description:
@@ -492,7 +492,7 @@ const cities = [
   },
   {
     name_city: "Seoul",
-    image: "seoul.jpg",
+    image: "https://images.unsplash.com/photo-1532085755448-a67fd3b518b2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U2VvdWx8ZW58MHx8MHx8fDA%3D",
     country: "South Korea",
     continent: "Asia",
     description:
