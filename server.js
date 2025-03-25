@@ -3,6 +3,7 @@ import "dotenv/config.js"
 import "./config/database.js"
 import cors from "cors"
 import morgan from "morgan"
+import routerIndex from "./router/index.js"
 
 const app = express()
 
@@ -17,5 +18,8 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(cors())
 app.use(morgan("dev"))
+
+// Enrutador
+app.use("/api",routerIndex)
 
 
