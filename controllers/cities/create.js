@@ -1,8 +1,11 @@
 import City from "../../models/City.js";
 
-let allCities = async (req, res, next) => {
+let createCity = async (req, res, next) => {
   try {
-    let all = await City.find();
+    let newCity = req.body;
+    console.log(newCity);
+
+    let all = await City.create(newCity);
     return res.status(200).json({
       response: all,
     });
@@ -13,12 +16,12 @@ let allCities = async (req, res, next) => {
   }
 };
 
-let cityById = async (req, res, next) => {
+let createCities = async (req, res, next) => {
   try {
-    let nameId = req.params.nameId
-    console.log(nameId);
+    let newCities = req.body;
+    console.log(newCities);
 
-    let all = await City.findById(nameId);
+    let all = await City.insertMany(newCities);
     return res.status(200).json({
       response: all,
     });
@@ -27,6 +30,6 @@ let cityById = async (req, res, next) => {
       response: error,
     });
   }
-}
+};
 
-export { allCities, cityById }
+export {createCity , createCities}
