@@ -10,9 +10,7 @@ let createCity = async (req, res, next) => {
       response: all,
     });
   } catch (error) {
-    return res.status(500).json({
-      response: error,
-    });
+    next(error)
   }
 };
 
@@ -26,9 +24,7 @@ let createCities = async (req, res, next) => {
       response: all,
     });
   } catch (error) {
-    return res.status(500).json({
-      response: error,
-    });
+    next(error)
   }
 };
 
