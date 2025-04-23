@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./server.js",
     "dev": "nodemon ./server.js",
-    "dataCities": "node ./models/data/dataCities.js"
+    "dataCities": "node ./models/data/dataCities.js",
+    "dataItineraries": "node ./models/data/dataItineraries.js"
   },
   "repository": {
     "type": "git",
