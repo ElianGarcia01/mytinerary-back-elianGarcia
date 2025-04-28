@@ -8,7 +8,7 @@ let routerItineraries = Router()
 
 // Controladores para solicitudes
 routerItineraries.get("/allItineraries", allItineraries)
-routerItineraries.get("/city/:nameItinerary", itineraryByCity)
+routerItineraries.get("/city/:nameCity", itineraryByCity)
 routerItineraries.get("/id/:nameId", itineraryById)
 routerItineraries.post("/createItinerary", createItinerary)
 routerItineraries.put("/updateItinerary", updateItinerary)

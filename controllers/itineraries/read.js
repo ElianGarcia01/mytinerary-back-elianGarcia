@@ -15,7 +15,7 @@ let allItineraries = async (req, res, next) => {
 
 let itineraryByCity = async (req, res, next) => {
   try {
-    let cityName = req.params.nameItinerary;
+    let cityName = req.params.nameCity;
 
     const city = await City.findOne({ name_city: cityName });
 
