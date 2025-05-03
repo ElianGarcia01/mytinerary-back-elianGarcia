@@ -2,13 +2,13 @@ import User from "../models/User.js"
 
 export default async (req, res, next) => {
   try {
-    const { email } = req.body;
+    const { email } = req.body
     let account = await User.findOne({ email })
     if (account) {
       req.user = {
         email: account.email,
         password: account.password,
-        position: account.position,
+        position: account.position
       }
       return next()
     }

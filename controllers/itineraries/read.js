@@ -1,53 +1,49 @@
-import Itinerary from "../../models/Itinerary.js";
-import City from "../../models/City.js";
+import Itinerary from "../../models/Itinerary.js"
+import City from "../../models/City.js"
 
 let allItineraries = async (req, res, next) => {
   try {
-    let all = await Itinerary.find().populate("city", "name_city").exec();
+    let all = await Itinerary.find().populate("city", "name_city").exec()
 
     return res.status(200).json({
-      response: all,
-    });
+      response: all
+    })
   } catch (error) {
-    next(error);
+    next(error)
   }
-};
+}
 
 let itineraryByCity = async (req, res, next) => {
   try {
-    let cityName = req.params.nameCity;
+    let cityName = req.params.nameCity
 
-    const city = await City.findOne({ name_city: cityName });
-
+    const city = await City.findOne({ name_city: cityName })
     if (!city) {
-      return res.status(404).json({ message: "City not found" });
+      return res.status(404).json({ message: "City not found" })
     }
-
-    // Buscar itinerarios relacionados con la ciudad
     const itineraries = await Itinerary.find({ city: city._id })
       .populate("city", "name_city")
-      .exec();
+      .exec()
 
     return res.status(200).json({
       response: itineraries,
-    });
+    })
   } catch (error) {
-    next(error);
+    next(error)
   }
 };
 
 let itineraryById = async (req, res, next) => {
   try {
-    let itineraryId = req.params.nameId;
-
-    let ItineraryFound = await Itinerary.findById(itineraryId);
+    let itineraryId = req.params.nameId
+    let ItineraryFound = await Itinerary.findById(itineraryId)
 
     return res.status(200).json({
-      response: ItineraryFound,
-    });
+      response: ItineraryFound
+    })
   } catch (error) {
-    next(error);
+    next(error)
   }
 }
 
-export { allItineraries, itineraryByCity, itineraryById };
+export { allItineraries, itineraryByCity, itineraryById }

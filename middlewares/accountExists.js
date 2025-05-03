@@ -8,7 +8,7 @@ export default async (req, res, next) => {
     if (account) {
       return res.status(400).json({
         succes: false,
-        message: "User alredy exists",
+        message: "User alredy exists"
       })
     }
     next()
