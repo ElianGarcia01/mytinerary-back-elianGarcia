@@ -8,7 +8,7 @@ export default async (req, res, next) => {
   if (!isMatch) {
     return res.status(400).json({
       success: false,
-      message: "Invalid credentials"
+      message: "The password you entered is incorrect. Please try again."
     })
   }
   return next()
