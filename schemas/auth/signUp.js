@@ -28,6 +28,8 @@ const schemaSignUp = joi.object({
     "array.base": "Favorites debe ser un arreglo de IDs válidos",
     "string.pattern.name": "Cada favorite debe ser un ObjectId válido",
   }),
+  googleId: joi.string().optional(),
+  from_google: joi.boolean().default(false)
 })
 
 export default schemaSignUp

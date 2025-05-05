@@ -10,7 +10,9 @@ let schema = Schema({
     country: { type: String },
     verified: { type: Boolean, default: false },
     favorites: [{ type: Schema.Types.ObjectId, ref: "itinerary" }],
-    online: {type: Boolean, default: false}
+    online: {type: Boolean, default: false},
+    googleId: { type: String, unique: true, sparse: true },
+    from_google: { type: Boolean, default: false }
 }, {
     timestamps: true
 })
