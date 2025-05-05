@@ -7,6 +7,9 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const googleAuth = async (req, res, next) => {
   try {
     const { token } = req.body;
+
+    console.log('Token recibido:', token);
+
     
     // Verificar el token de Google
     const ticket = await client.verifyIdToken({
