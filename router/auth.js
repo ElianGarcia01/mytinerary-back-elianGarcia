@@ -9,10 +9,13 @@ import schemaSignIn from "../schemas/auth/signIn.js"
 import accountNoExists from "../middlewares/accountNoExists.js"
 import validedPassword from "../middlewares/validedPassword.js"
 import generateToken from "../middlewares/generateToken.js"
+import verifyToken from "../middlewares/verifyToken.js"
+import signOut from "../controllers/auth/signOut.js"
 
 const routerAuth = Router()
 
 routerAuth.post("/signUp", validator(schemaSignUp), accountExists, createHash, signUp)
 routerAuth.post('/signIn', validator(schemaSignIn), accountNoExists, validedPassword, generateToken, signIn)
+routerAuth.post('/signOut', verifyToken, signOut)
 
 export default routerAuth
