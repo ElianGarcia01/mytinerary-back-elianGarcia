@@ -18,11 +18,6 @@ const schemaSignUp = joi.object({
     "string.uri": "El photo debe ser una URL válida",
     "any.required": "El photo es requerido",
   }),
-  role: joi.number().valid(0, 1).required().messages({
-    "number.base": "El role debe ser un número (0 o 1)",
-    "any.only": "El role debe ser 0 (user) o 1 (admin)",
-    "any.required": "El role es requerido",
-  }),
   country: joi.string().optional().messages({
     "string.base": "El country debe ser un texto",
   }),
@@ -32,10 +27,6 @@ const schemaSignUp = joi.object({
   favorites: joi.array().items(joi.objectId()).optional().messages({
     "array.base": "Favorites debe ser un arreglo de IDs válidos",
     "string.pattern.name": "Cada favorite debe ser un ObjectId válido",
-  }),
-  bio: joi.string().max(280).optional().messages({
-    "string.base": "El bio debe ser un texto",
-    "string.max": "El bio no debe superar los 280 caracteres",
   }),
 })
 

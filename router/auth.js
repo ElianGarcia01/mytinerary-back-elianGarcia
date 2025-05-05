@@ -11,11 +11,13 @@ import validedPassword from "../middlewares/validedPassword.js"
 import generateToken from "../middlewares/generateToken.js"
 import verifyToken from "../middlewares/verifyToken.js"
 import signOut from "../controllers/auth/signOut.js"
+import googleAuth from "../controllers/auth/googleAuth.js"
 
 const routerAuth = Router()
 
 routerAuth.post("/signUp", validator(schemaSignUp), accountExists, createHash, signUp)
 routerAuth.post('/signIn', validator(schemaSignIn), accountNoExists, validedPassword, generateToken, signIn)
 routerAuth.post('/signOut', verifyToken, signOut)
+routerAuth.post('/google', googleAuth)
 
 export default routerAuth
