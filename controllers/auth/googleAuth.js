@@ -1,6 +1,6 @@
 import { OAuth2Client } from 'google-auth-library';
 import User from '../../models/User.js';
-import generateToken from '../../middlewares/generateToken.js';
+import generateUsefulToken from '../../middlewares/generateUsefulToken.js';
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
@@ -71,7 +71,7 @@ const googleAuth = async (req, res) => {
     await user.save();
 
     // 4. Generar token JWT
-    const authToken = generateToken(user);
+    const authToken = generateUsefulToken(user);
 
     return res.status(200).json({
       success: true,
